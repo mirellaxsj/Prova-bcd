@@ -1,0 +1,6 @@
+MER - Modelo de Entidade e Relacionamento
+
+Veículo(placa: chave primária, modelo, marca, tipo);
+Cliente(cpf: chave primária, nome);
+Aluguel(id: chave primária, data_reserva, retirada, devolução, valor_diaria, status, subtotal, cpf: chave estrangeira[referencia cpf(Cliente)], placa: chave estrangeira[referencia placa(Veículo)];
+Telefone(id: chave primária, telefone, telefone_secundário, cpf: chave estrangeira[referencia cpf(Cliente)];
